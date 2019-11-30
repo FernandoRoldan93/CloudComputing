@@ -23,3 +23,20 @@ El resultado de la creación de un entorno virtual de Python en la versión más
 ## Crear una descripción del módulo usando package.json. En caso de que se trate de otro lenguaje, usar el método correspondiente.
 
 Para realizar este ejercicio utilizaremos Python. En este lenguaje y más concretamente en pip existe de forma análoga a package.json los ficheros de requerimientos, en estos ficheros podremos especificar las dependencias entre módulos para ello basta con incluir en el fichero la línea `sqlite3>=3.0` y más tarde bastaría con realizar `pip install -r requerimientos.txt`. Sin embargo, sqlite3 ya está instalado por defecto en python3 por lo que no será necesario instalarlo.
+
+## Descargar el repositorio de ejemplo anterior, instalar las herramientas necesarias (principalmente Scala y sbt) y ejecutar el ejemplo desde sbt. Alternativamente, buscar otros marcos para REST en Scala tales como Finatra o Scalatra y probar los ejemplos que se incluyan en el repositorio.
+
+Siguiendo los pasos en el [repositorio](https://github.com/JJ/spray-test) primero descargamos el repositorio con el siguiente comando:
+`git clone git://github.com/JJ/spray-test my-project`
+
+Tambien habrá que instalar sbt, java y scala. Para ello se han seguido las instrucciones que se pueden consultar en este [enlace](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Linux.html) y en este [enlace](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04)
+
+Una vez instalado todo y siguiendo con las instrucciones del repositorio, solo deberemos instroducir el comando `sbt` para ejecutar el entorno. Posteriormente introduciremos `test` y `re-start` para ejecutar los test y posteriormente ejecutar el servicio.
+
+![](img/ejercicioSbt.png)
+
+![](img/ejercicioSbt1.png)
+
+Una vez hecho esto podemos hacer pruebas como se recomienda en el repositorio:
+
+![](img/PruebaSbt.png)
